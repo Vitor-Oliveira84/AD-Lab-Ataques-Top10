@@ -1,11 +1,8 @@
 
 # Configuração do Laboratório
 
-Exemplo:
-
-Criar conta vulnerável:
-
-```
-New-ADUser svc_sql -AccountPassword (ConvertTo-SecureString "Password123!" -AsPlainText -Force) -Enabled $true
-setspn -a MSSQLSvc/sql.lab.local svc_sql
-```
+Para forjar um Silver Ticket, você precisa de:
+Hash NTLM do alvo: Pode ser o hash de uma conta de serviço (como o svc_sql que criamos no Kerberoasting) ou o hash da conta de um computador (ex: SERVER01$).
+SID do Domínio.
+Nome do Serviço (SPN): Ex: cifs (para arquivos), http (para web), mssql (para banco).
+Nome do Servidor Alvo: Ex: server01.lab.local.
