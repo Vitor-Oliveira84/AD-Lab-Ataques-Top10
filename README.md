@@ -15,14 +15,13 @@ Cada técnica contém:
 Máquinas sugeridas:
 
 - Kali Linux (Atacante)
-- Windows Server (Domain Controller)
+- Windows Server 2012 (Domain Controller)
 - Windows 10 (Workstation 1)
-- Windows 10 (Workstation 2)
 
 Domínio:
 
-lab.local
+dom.local
 
 Rede exemplo:
 
-192.168.56.0/24
+192.168.220.0/24
